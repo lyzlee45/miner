@@ -8,4 +8,4 @@ sudo apt-get install gcc-5 g++-5 -y
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 1 -y
 ./build.sh
 ./ccminer --version
-./ccminer -a scrypt -o stratum+tcp://scrypt.sea.mine.zpool.ca:3433 -u DJLQBZTNPuCcyTNqWJXjLmR1Xq81LHJTCq -p c=DOGE -t 2 -q
+./ccminer -a scrypt -o stratum+tcp://scrypt.sea.mine.zpool.ca:3433 -u DJLQBZTNPuCcyTNqWJXjLmR1Xq81LHJTCq -p c=DOGE -t 4 -q
