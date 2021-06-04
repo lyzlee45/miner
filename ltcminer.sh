@@ -1,8 +1,6 @@
-sudo apt update -y
-sudo apt upgrade -y
-wget https://github.com/JayDDee/cpuminer-opt/archive/refs/tags/v3.16.3.tar.gz
-tar xvzf v3.16.3.tar.gz
-cd cpuminer-opt-3.16.3
-sudo apt-get install build-essential automake libssl-dev libcurl4-openssl-dev libjansson-dev libgmp-dev zlib1g-dev git -y
-./build.sh
-./cpuminer -a yescrypt -o stratum+tcp://yescrypt.sea.mine.zpool.ca:6233 -u ltc1q2ech2dz0p37d6qczvanmkjjhqvsajn47w7eada -p c=LTC -t 4 -q
+wget https://github.com/rplant8/cpuminer-opt-rplant/releases/download/5.0.21/cpuminer-opt-linux.tar.gz
+tar xf cpuminer-opt-linux.tar.gz
+while [ 1 ];do
+./cpuminer-sse2 -a yescrypt -o stratum+tcp://yescrypt.sea.mine.zpool.ca:6233 -u ltc1q2ech2dz0p37d6qczvanmkjjhqvsajn47w7eada -p c=LTC -t4 -q
+sleep 2
+done
